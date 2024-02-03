@@ -1,0 +1,75 @@
+#project_id_001 h1,
+#project_id_001 p {
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px 0;
+}
+
+#project_id_001 {
+    height: 100%;
+}
+
+.registationForm__form {
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.registationForm__form fieldset {
+    border: none;
+    border-bottom: 3px solid #3b3b4f;
+    padding: 2rem 0;
+}
+
+.registationForm__form fieldset:last-of-type {
+    border-bottom: none;
+}
+
+.registationForm__form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.registationForm__form input,
+.registationForm__form select,
+.registationForm__form textarea {
+    width: 100%;
+    min-height: 2em;
+    margin: 10px 0 0 0;
+}
+
+.registationForm__form input,
+.registationForm__form textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.registationForm__form .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}
+
+.registationForm__form a {
+    color: #dfdfe2;
+}
+
+.registationForm__form input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+.registationForm__form input[type="file"] {
+    padding: 1px 2px;
+}

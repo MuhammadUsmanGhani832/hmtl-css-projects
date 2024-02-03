@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles/registationForm.css">
+    <link rel="stylesheet" href="./src/styles/colorMarker.css">
+    <link rel="stylesheet" href="./src/styles/photoGallery.css">
+    <link rel="stylesheet" href="./src/styles/rothkoPainting.css">
+    <title>HTML/CSS/JS small projects</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="menu-btn" id="menu-btn" onclick="menuFunction()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-div" id="menu-div">
+            <div class="menu-close"><i class="fas fa-times menu-close-btn"></i></div>
+
+            <div class="menu-div-projects">
+                <p onclick="showProject('project_id_001')">#1: Registration Form</p>
+                <p onclick="showProject('rothkoPainting')">#1: Rothko Painting</p>
+                <p onclick="showProject('photoGallery')">#: Photo gallery</p>
+                <p onclick="showProject('colorMarker')">#: Color Marker</p>
+            </div>
+        </div>
+    </nav>
+    <div class="loading">
+        <i class="fas fa-spinner fa-spin"></i>
+        <span>loading...</span>
+    </div>
+    <main id="main" style="display: none;">
+        <!-- Registration Form -->
+        <section class="projects" id="project_id_001">
+            <h1>Registration Form</h1>
+            <p>please fill the form for registration</p>
+            <form action="abc" method="post" class="registationForm__form">
+                <fieldset>
+                    <label for="first-name">
+                        Enter your first name: <input type="text" id="first-name" required name="first-name">
+                    </label>
+                    <label for="last-name">
+                        Enter your last name: <input type="text" id="last-name" required name="last-name">
+                    </label>
+                    <label for="email">
+                        Enter your email: <input type="text" id="email" required name="email">
+                    </label>
+                    <label for="password">
+                        Enter your password: <input type="text" id="password" required name="password">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Account Type (required)</legend>
+                    <label for=""><input checked class="inline" type="radio" name="account-type" value="Personal">
+                        Personal</label>
+                    <label for=""><input class="inline" type="radio" name="account-type" value="Business">
+                        Business</label>
+                </fieldset>
+                <fieldset>
+                    <label for="file">
+                        Upload a profile picture: <input type="file" id="file" name="picture">
+                    </label>
+                    <label for="age">
+                        Input your age (years): <input type="number" id="age" name="picture" min="13" max="120">
+                    </label>
+                    <label for="referrer">
+                        How did you hear about us? <select name="referrer" id="referrer">
+                            <option value="">(select one)</option>
+                            <option value="1">FreeCodeCamp News</option>
+                            <option value="2">FreeCodeCamp YouTube Channel</option>
+                            <option value="3">FreeCodeCamp Forum</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </label>
+                    <label for="bio">
+                        <textarea name="bio" id="bio" cols="30" rows="3"
+                            placeholder="I like coding at beach..."></textarea>
+                    </label>
+                </fieldset>
+                <label for=""><input type="checkbox" class="inline" value="verify-terms-and-conditions"
+                        id="terms-and-conditions" required> I
+                    accept the <a href="">terms and conditions</a></label>
+                <input type="submit" value="Submit">
+            </form>
+            <footer>
+                <p>I learned and made this project on <a href="https://www.freecodecamp.org/learn">&copy;
+                        FreeCodeCamp</a></p>
+            </footer>
+        </section>
+        <!-- Rothko Painting -->
+        <section class="projects" id="rothkoPainting">
+            <div class="rothkoPainting__main">
+                <div class="rothkoPainting__frame">
+                    <div class="rothkoPainting__canvas">
+                        <div class="rothkoPainting__one"></div>
+                        <div class="rothkoPainting__two"></div>
+                        <div class="rothkoPainting__three"></div>
+                    </div>
+                </div>
+                <footer>
+                    <p>I learned and made this project on <a href="https://www.freecodecamp.org/learn">&copy;
+                            FreeCodeCamp</a></p>
+                </footer>
+            </div>
+
+        </section>
+        <!-- Photo Gallery -->
+        <section class="projects" id="photoGallery">
+            <div class="photoGallery__main">
+                <header class="photoGallery__header">
+                    <h1 class="photoGallery__title">PHOTO GALLERY</h1>
+                </header>
+                <div class="photoGallery__imageContainer">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg"
+                        alt="cat pics for gallery app">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg"
+                        alt="cat pics for gallery app">
+                </div>
+            </div>
+            <footer>
+                <p>&copy; <a href="">FreeCodeCamp</a></p>
+            </footer>
+        </section>
+        <!-- Color Marker -->
+        <section class="projects" id="colorMarker">
+            <div class="colorMarker__mainContainer">
+                <h1 class="colorMarker__title">Color Marker</h1>
+
+                <div class="colorMarker__container">
+                    <div class="colorMarker__marker colorMarker__red">
+                        <div class="colorMarker__cap"></div>
+                        <div class="colorMarker__sleeve"></div>
+                    </div>
+                    <div class="colorMarker__marker colorMarker__green">
+                        <div class="colorMarker__cap"></div>
+                        <div class="colorMarker__sleeve"></div>
+                    </div>
+                    <div class="colorMarker__marker colorMarker__blue">
+                        <div class="colorMarker__cap"></div>
+                        <div class="colorMarker__sleeve"></div>
+                    </div>
+                </div>
+                <footer>
+                    <p>&copy; <a href="">FreeCodeCamp</a></p>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+    <!-- <script src="./src/javascript/RegistraionForm.js"></script> -->
+</body>
+
+</html>

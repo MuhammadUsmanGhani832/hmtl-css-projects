@@ -1,0 +1,63 @@
+#colorMarker {
+    padding: 10px;
+
+}
+
+.colorMarker__mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorMarker__title {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.colorMarker__container {
+    flex: 1;
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    min-height: 90%;
+}
+
+.colorMarker__marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.colorMarker__cap {
+    width: 60px;
+    height: 25px;
+}
+
+.colorMarker__sleeve {
+    height: 25px;
+    width: 110px;
+    background-color: rgba(244, 237, 237, 0.365);
+
+    border-left: 10px double rgba(0, 0, 0, 0.719);
+}
+
+.colorMarker__cap,
+.colorMarker__sleeve {
+    display: inline-block;
+}
+
+.colorMarker__red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.colorMarker__green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.colorMarker__blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
+}
